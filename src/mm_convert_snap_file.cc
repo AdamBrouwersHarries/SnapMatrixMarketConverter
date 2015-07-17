@@ -74,7 +74,7 @@ int main(int argc, char** argv) {
   mm_set_real(&matcode);
 
   mm_write_banner(ofp, matcode); 
-  mm_write_mtx_crd_size(ofp, M, M, N);
+  mm_write_mtx_crd_size(ofp, N, N, M);
   for(unsigned int i = 0; i<M; i++){
     fprintf(ofp, "%d %d 1.0\n", adj[i].first, adj[i].second);
   }
